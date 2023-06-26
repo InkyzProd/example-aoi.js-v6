@@ -8,8 +8,10 @@ const { setup } = require("@akarui/aoi.parser");
 
 setup(Util);
 
+const setting = require("./config/config.json")
+
 const Client = new AoiClient({
-    token: process.env.TOKEN,
+    token: setting.token,
     prefix: "$getGuildVar[prefix:$guildID;main]",
     intents: ["MessageContent", "Guilds", "GuildMessages"],
     events: ["onMessage", "onInteractionCreate"],
