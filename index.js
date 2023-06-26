@@ -10,7 +10,7 @@ setup(Util);
 
 const Client = new AoiClient({
     token: process.env.TOKEN,
-    prefix: "!",
+    prefix: "$getGuildVar[prefix:$guildID;main]",
     intents: ["MessageContent", "Guilds", "GuildMessages"],
     events: ["onMessage", "onInteractionCreate"],
     database: {
@@ -24,9 +24,7 @@ const Client = new AoiClient({
     }
 });
 
-Client.variables(
-  require("./settings/variables.js")
-);
+require("./settings/variables.js")(Client);
 
 const cmdload = new LoadCommands(Client);
 cmdload.load(
