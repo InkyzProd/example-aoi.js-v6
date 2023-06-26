@@ -1,7 +1,6 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,17 @@
     "@types/node": "^18.0.6",
     "aoi.js": "^6.2.6",
     "node-fetch": "^3.2.6"
-  }
+  },
+  "devDependencies": {
+    "node": "^16.20.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InkyzProd/example-aoi.js-v6.git"
+  },
+  "bugs": {
+    "url": "https://github.com/InkyzProd/example-aoi.js-v6/issues"
+  },
+  "homepage": "https://github.com/InkyzProd/example-aoi.js-v6#readme",
+  "description": ""
 }
