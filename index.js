@@ -1,8 +1,16 @@
-const { AoiClient, LoadCommands } = require("aoi.js");
+const {
+  AoiClient,
+  LoadCommands,
+  Util
+} = require("aoi.js");
+
+const { setup } = require("@akarui/aoi.parser");
+
+setup(Util);
 
 const Client = new AoiClient({
-    token: "Discord Bot Token",
-    prefix: "Discord Bot Prefix",
+    token: process.env.TOKEN,
+    prefix: "!",
     intents: ["MessageContent", "Guilds", "GuildMessages"],
     events: ["onMessage", "onInteractionCreate"],
     database: {
@@ -16,5 +24,12 @@ const Client = new AoiClient({
     }
 });
 
+Client.variables(
+  require("./settings/variables.js")
+);
+
 const cmdload = new LoadCommands(Client);
-cmdload.load(Client.cmd, "./commands/")
+cmdload.load(
+  Client.cmd,
+  "./commands"
+)
