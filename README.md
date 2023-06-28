@@ -34,4 +34,4 @@ href="https://discord.gg/">My discord server</a>
 
 </div>
 
-# For more info coming soon!
+# For more info coming soon!.
