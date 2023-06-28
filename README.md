@@ -33,3 +33,5 @@ href="https://discord.gg/">My discord server</a>
 [![Stars](https://img.shields.io/github/stars/AkaruiDevelopment/aoi.js.svg)](https://github.com/AkaruiDevelopment/aoi.js/stargazers)
 
 </div>
+
+# For more info coming soon!
