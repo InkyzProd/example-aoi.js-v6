@@ -11,8 +11,10 @@
     <a href="https://aoi.js.org/">Home Page</a> |
     <a href="https://discord.gg/HMUfMXDQsV">Discord</a> |
     <a href="https://aoi.js.org/community.">Examples</a> |
-    <a href="https://aoi.js.org/docs/">Documentation</a>
-</div>
+    <a href="https://aoi.js.org/docs/">Documentation</a> |
+    <a
+href="https://discord.gg/">My discord server</a>
+
 </div>
 <br />
 
