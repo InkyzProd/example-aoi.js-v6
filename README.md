@@ -37,13 +37,13 @@ href="https://discord.gg/">My discord server</a>
 ## Hello welcome to our repository!
 How do i get started? Let's follow the steps below.
 ## Installing packages
-```http
+```
   npm install aoi.js
   ```
-```http
+```
   npm install @akarui/aoi.db
 ```
-```http
+```
   npm install @akarui/aoi.parser
 ```
 - - -
