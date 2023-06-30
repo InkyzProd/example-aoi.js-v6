@@ -34,4 +34,114 @@ href="https://discord.gg/">My discord server</a>
 
 </div>
 
-# For more info coming soon!.
+## Hello welcome to our repository!
+How do i get started? Let's follow the steps below.
+## Installing packages
+```http
+  npm install aoi.js
+  ```
+```http
+  npm install @akarui/aoi.db
+```
+```http
+  npm install @akarui/aoi.parser
+```
+- - -
+## main file
+```javascript
+const {
+  AoiClient,
+  LoadCommands,
+  Util } = require("aoi.js");
+const { setup } = require("@akarui/aoi.parser");
+
+setup(Util);
+const setting = require("./config/config.json")
+
+const Client = new AoiClient({
+  token: setting.token,
+  prefix: "$getGuildVar[prefix:$guildID;main]",
+  intents: ["MessageContent", "Guilds", "GuildMessages"],
+  events: ["onMessage", "onInteractionCreate"],
+  database: {
+    type: "aoi.db",
+    db: require("@akarui/aoi.db"),
+    tables: ["main"],
+    path: "./database/",
+    extraOptions: {
+      dbType: "KeyValue"
+      }
+    }
+});
+
+require("./settings/variables.js")(Client);
+const cmdload = new LoadCommands(Client);
+cmdload.load(  Client.cmd, "./commands")
+```
+- - -
+
+## ./config/config.js
+you can find an example of the content in config.js at [config.js](https://github.com/InkyzProd/example-aoi.js-v6/blob/main/config/config.json)
+
+## list of intents, events and permissions aoi.js
+
+> ### Gateway Intents
+- *MessageContent*
+- *Guilds*
+- *GuildMessages*
+- *GuildMembers*
+- *GuildBans*
+- *GuildEmojisAndStickers*
+- *GuildIntegrations*
+- *GuildWebhooks*
+- *GuildInvites*
+- *GuildVoiceStates*
+- *GuildPresences*
+- *GuildMessageReactions*
+- *GuildMessageTyping*
+- *DirectMessages*
+- *DirectMessageReactions*
+- *DirectMessageTyping*
+- - -
+> ### Permissions
+##### - administrator
+##### - addreactions
+##### - attachfiles
+##### - banmembers
+##### - createinvite
+##### - createpublicthreads
+##### - createprivatethreads
+##### - changenickname
+##### - embedlinks
+##### - managenicknames
+##### - manageroles
+##### - managewebhooks
+##### - manageemojisandstickers
+##### - manageevents
+##### - managethreads
+##### - moderatemembers
+##### - mentioneveryone
+##### - managemessages
+##### - manageguild
+##### - managechannels
+##### - readmessagehistory
+##### - useexternalstickers
+##### - useapplicationcommands
+##### - useexternalemojis
+##### - viewguildinsights
+##### - viewchannel
+##### - viewauditlog
+- - -
+> ### Events
+
+##### Message Event
+| **For Handler**     	| **Non Handler**   	|
+|---------------------	|-------------------	|
+| onMessage           	|                   	|
+| onMessageDelete     	| messageDelete     	|
+| onMessageUpdate     	| messageUpdate     	|
+| onMessageDeleteBulk 	| messageDeleteBulk 	|
+| onReactionAdd       	| reactionAdd       	|| onReactionRemove    	| reactionRemove    	|
+| onReactionRemoveAll 	| reactionRemoveAll 	|
+- - -
+##### Guild Event
