@@ -104,33 +104,33 @@ you can find an example of the content in config.js at [config.js](https://githu
 - *DirectMessageTyping*
 - - -
 > ### Permissions
-##### - administrator
-##### - addreactions
-##### - attachfiles
-##### - banmembers
-##### - createinvite
-##### - createpublicthreads
-##### - createprivatethreads
-##### - changenickname
-##### - embedlinks
-##### - managenicknames
-##### - manageroles
-##### - managewebhooks
-##### - manageemojisandstickers
-##### - manageevents
-##### - managethreads
-##### - moderatemembers
-##### - mentioneveryone
-##### - managemessages
-##### - manageguild
-##### - managechannels
-##### - readmessagehistory
-##### - useexternalstickers
-##### - useapplicationcommands
-##### - useexternalemojis
-##### - viewguildinsights
-##### - viewchannel
-##### - viewauditlog
+- *administrator*
+- *addreactions*
+- *attachfiles*
+- *banmembers*
+- *createinvite*
+- *createpublicthreads*
+- *createprivatethreads*
+- *changenickname*
+- *embedlinks*
+- *managenicknames*
+- *manageroles*
+- *managewebhooks*
+- *manageemojisandstickers*
+- *manageevents*
+- *managethreads*
+- *moderatemembers*
+- *mentioneveryone*
+- *managemessages*
+- *manageguild*
+- *managechannels*
+- *readmessagehistory*
+- *useexternalstickers*
+- *useapplicationcommands*
+- *useexternalemojis*
+- *viewguildinsights*
+- *viewchannel*
+- *viewauditlog*
 - - -
 > ### Events
 
