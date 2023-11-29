@@ -16,7 +16,7 @@
     "node-fetch": "^3.2.6"
   },
   "devDependencies": {
-    "node": "^16.20.1"
+    "node": "^21.0.0"
   },
   "repository": {
     "type": "git",
