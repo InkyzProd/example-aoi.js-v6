@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@akarui/aoi.db": "^1.0.0",
+    "@akarui/aoi.db": "^2.0.0",
     "@akarui/aoi.parser": "^1.0.1",
     "@types/node": "^18.0.6",
     "aoi.js": "^6.2.6",
